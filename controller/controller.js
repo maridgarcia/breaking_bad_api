@@ -4,7 +4,7 @@ const service = require("../service/service");
 
 
 infoRouter.get("/", async (_req, res) => {
-    const allInfo = await service.getAllInfo();
+    const allInfo = await servie.getAllInfo();
 
     res.status(200).json(allInfo);
 });
