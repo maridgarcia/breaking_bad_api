@@ -13,9 +13,7 @@ infoRouter.get("/", async (_req, res) => {
         body: await service.getAllInfo(),
     };
 
-    console.log(response.headers)
-
-    res.status(response.statusCode).json(response.body);
+    res.status(response.statusCode).json({response.body, response.headers});
 });
 
 module.exports = infoRouter;
