@@ -8,7 +8,7 @@ infoRouter.get("/", async (_req, res) => {
         headers: {
             "Access-Control-Allow-Headers" : "Content-Type",
             "Access-Control-Allow-Origin": "https://breakingbadcars.cyclic.app/",
-            "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+            "Access-Control-Allow-Methods": "GET"
         },
         body: await service.getAllInfo(),
     };
